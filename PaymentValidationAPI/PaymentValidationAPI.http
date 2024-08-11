@@ -1,0 +1,14 @@
+@PaymentValidationAPI_HostAddress = http://localhost:5045
+
+POST {{PaymentValidationAPI_HostAddress}}/creditcard/
+Accept: application/json
+Content-Type: application/json
+
+{
+    "CardNumber": "378282246310005",
+    "ExpireDate": "10/27",
+    "CVC": "7890",
+    "CardOwner": "Alice Johnson"
+}
+
+###
